@@ -1,0 +1,26 @@
+{
+  "qInfo": {
+    "qId": "bda33f7c-a770-4c7f-ba57-b775fe001fbf",
+    "qType": "measure"
+  },
+  "qMeasure": {
+    "qLabel": "Cota PCP [m.s.n.m.] Max Fecha - PCP - PID",
+    "qDef": "IF($(vFiltroInicial),\r\n    \tAvg({<fuente = {'PCP'},Fecha = {\"$(=MAX({<fuente = {'PID'}>} Fecha))\"},etapa,bloque,hidro,hidroFiltro,fecha_hora_version>} cota),\n        Avg({<fuente = {'PCP'},etapa,bloque,hidro,hidroFiltro,fecha_hora_version>} cota)\n)\n\n",
+    "qGrouping": "N",
+    "qExpressions": [],
+    "qActiveExpression": 0,
+    "qLabelExpression": "='Cota PCP [m.s.n.m.]'",
+    "qNumFormat": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "numFormatFromTemplate": true,
+    "coloring": {}
+  },
+  "qMetaDef": {
+    "title": "Cota PCP [m.s.n.m.] Max Fecha - PCP - PID",
+    "description": "",
+    "tags": []
+  }
+}

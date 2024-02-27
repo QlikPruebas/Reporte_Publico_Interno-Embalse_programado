@@ -1,0 +1,15 @@
+{
+  "qInfo": {
+    "qId": "c4609e9e-b66a-4595-af49-28c9a831ff98",
+    "qType": "variable"
+  },
+  "qMetaDef": {},
+  "qName": "vMensajeErrorVersiones",
+  "qNumberPresentation": {
+    "qType": "U",
+    "qnDec": 10,
+    "qUseThou": 0
+  },
+  "qDefinition": "Seleccione solo una fecha versión de programa.",
+  "tags": []
+}

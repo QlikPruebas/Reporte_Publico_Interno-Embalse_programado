@@ -1,0 +1,26 @@
+{
+  "qInfo": {
+    "qId": "RSbQjL",
+    "qType": "measure"
+  },
+  "qMeasure": {
+    "qLabel": "Valor Cota [m.s.n.m.]",
+    "qDef": "AVG(cota)",
+    "qGrouping": "N",
+    "qExpressions": [],
+    "qActiveExpression": 0,
+    "qLabelExpression": "='Cota [m.s.n.m.]'",
+    "qNumFormat": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "numFormatFromTemplate": true,
+    "coloring": {}
+  },
+  "qMetaDef": {
+    "title": "Valor Cota [m.s.n.m.]",
+    "description": "",
+    "tags": []
+  }
+}

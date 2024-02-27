@@ -1,0 +1,25 @@
+{
+  "qInfo": {
+    "qId": "cPppneQ",
+    "qType": "dimension"
+  },
+  "qDim": {
+    "qGrouping": "N",
+    "qFieldDefs": [
+      "Fecha_Efectiva"
+    ],
+    "qFieldLabels": [
+      "Fecha"
+    ],
+    "qLabelExpression": "='Fecha'",
+    "title": "Fecha",
+    "coloring": {
+      "changeHash": "0.08932884608069824"
+    }
+  },
+  "qMetaDef": {
+    "title": "Fecha",
+    "description": "",
+    "tags": []
+  }
+}

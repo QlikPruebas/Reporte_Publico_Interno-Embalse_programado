@@ -1,0 +1,25 @@
+{
+  "qInfo": {
+    "qId": "pJjxjN",
+    "qType": "dimension"
+  },
+  "qDim": {
+    "qGrouping": "N",
+    "qFieldDefs": [
+      "fecha_hora_version"
+    ],
+    "qFieldLabels": [
+      "Fecha Hora Versión"
+    ],
+    "qLabelExpression": "='Fecha Hora Versión'",
+    "title": "Fecha Hora Versión",
+    "coloring": {
+      "changeHash": "0.6699107135097837"
+    }
+  },
+  "qMetaDef": {
+    "title": "Fecha Hora Versión",
+    "description": "",
+    "tags": []
+  }
+}

@@ -1,0 +1,31 @@
+///$tab Embalse Programado
+Embalse_Programado:
+LOAD
+    AUTONUMBER(%KEY_BLOQUE_FUENTE_VERSION)	AS %KEY_BLOQUE_FUENTE_VERSION,
+    nombre_embalse,
+    nombre_opereal,
+    cota,
+    Precio,
+    cota_min_msnm,
+    cota_max_msnm,
+    intervalo,
+    fuente,
+    cuenca,
+    fecha_version,
+    fecha_hora_version,
+    numero_version,
+    embvini,
+    embfac,
+    embqgen,
+    embqver,
+    embqdef,
+    embpsom2,
+    embaflu,
+    embqfil,
+    embqreb,
+    bloque,
+    hidro,
+    hidro 									AS hidroFiltro,
+    etapa
+FROM [lib://STG/PLATAFORMA PROGRAMACION/STG_PRG_EMBALSE_PROGRAMADO.qvd]
+(qvd);

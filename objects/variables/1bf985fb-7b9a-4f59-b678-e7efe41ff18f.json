@@ -1,0 +1,15 @@
+{
+  "qInfo": {
+    "qId": "1bf985fb-7b9a-4f59-b678-e7efe41ff18f",
+    "qType": "variable"
+  },
+  "qMetaDef": {},
+  "qName": "vFiltrosPMP-PLP",
+  "qNumberPresentation": {
+    "qType": "U",
+    "qnDec": 10,
+    "qUseThou": 0
+  },
+  "qDefinition": "{<nombre_embalse={'RALCO'},fuente = {'PMP'},AñoMesNum= {\"<$(=MIN({<fuente = {'PMP'}>}AñoMesNum)+6)\"}>}",
+  "tags": []
+}

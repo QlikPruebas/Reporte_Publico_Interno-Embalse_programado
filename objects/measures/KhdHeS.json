@@ -1,0 +1,26 @@
+{
+  "qInfo": {
+    "qId": "KhdHeS",
+    "qType": "measure"
+  },
+  "qMeasure": {
+    "qLabel": "Cota mínima [m.s.n.m.]",
+    "qDef": "AVG(cota_min_msnm)\r\n\n",
+    "qGrouping": "N",
+    "qExpressions": [],
+    "qActiveExpression": 0,
+    "qLabelExpression": "='Cota mínima [m.s.n.m.]'",
+    "qNumFormat": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "numFormatFromTemplate": true,
+    "coloring": {}
+  },
+  "qMetaDef": {
+    "title": "Cota mínima [m.s.n.m.]",
+    "description": "",
+    "tags": []
+  }
+}

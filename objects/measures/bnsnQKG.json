@@ -1,0 +1,25 @@
+{
+  "qInfo": {
+    "qId": "bnsnQKG",
+    "qType": "measure"
+  },
+  "qMeasure": {
+    "qLabel": "USD/MWh - PLP",
+    "qDef": "AVG({<fuente={'PLP'},fecha_hora_version>}  Precio)",
+    "qGrouping": "N",
+    "qExpressions": [],
+    "qActiveExpression": 0,
+    "qLabelExpression": "='USD/MWh PLP'",
+    "qNumFormat": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "coloring": {}
+  },
+  "qMetaDef": {
+    "title": "USD/MWh - PLP",
+    "description": "",
+    "tags": []
+  }
+}

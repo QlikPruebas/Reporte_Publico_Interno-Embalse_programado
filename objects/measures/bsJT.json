@@ -1,0 +1,26 @@
+{
+  "qInfo": {
+    "qId": "bsJT",
+    "qType": "measure"
+  },
+  "qMeasure": {
+    "qLabel": "Cota PLP [m.s.n.m.]",
+    "qDef": "Avg({<fuente = {'PLP'},fecha_hora_version>} cota)",
+    "qGrouping": "N",
+    "qExpressions": [],
+    "qActiveExpression": 0,
+    "qLabelExpression": "='Cota PLP [m.s.n.m.]'",
+    "qNumFormat": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "numFormatFromTemplate": true,
+    "coloring": {}
+  },
+  "qMetaDef": {
+    "title": "Cota PLP [m.s.n.m.]",
+    "description": "",
+    "tags": []
+  }
+}

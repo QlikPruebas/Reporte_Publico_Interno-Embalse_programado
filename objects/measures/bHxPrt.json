@@ -1,0 +1,26 @@
+{
+  "qInfo": {
+    "qId": "bHxPrt",
+    "qType": "measure"
+  },
+  "qMeasure": {
+    "qLabel": "Cota PID [m.s.n.m.]",
+    "qDef": "Avg({<fuente = {'PID'},etapa,bloque,hidro,hidroFiltro>} cota)",
+    "qGrouping": "N",
+    "qExpressions": [],
+    "qActiveExpression": 0,
+    "qLabelExpression": "='Cota PID [m.s.n.m.]'",
+    "qNumFormat": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "numFormatFromTemplate": true,
+    "coloring": {}
+  },
+  "qMetaDef": {
+    "title": "Cota PID [m.s.n.m.]",
+    "description": "",
+    "tags": []
+  }
+}

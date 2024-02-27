@@ -1,0 +1,15 @@
+{
+  "qInfo": {
+    "qId": "a4f5b65d-768f-4b67-8d38-57d9e4c2d91d",
+    "qType": "variable"
+  },
+  "qMetaDef": {},
+  "qName": "vMultiplesVersiones",
+  "qNumberPresentation": {
+    "qType": "U",
+    "qnDec": 10,
+    "qUseThou": 0
+  },
+  "qDefinition": "GetSelectedCount(fecha_version)>1 OR GetSelectedCount(fecha_version_indhor)>1 OR GetSelectedCount(fecha_hora_version)>1",
+  "tags": []
+}

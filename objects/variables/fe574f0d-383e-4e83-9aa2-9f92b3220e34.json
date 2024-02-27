@@ -1,0 +1,15 @@
+{
+  "qInfo": {
+    "qId": "fe574f0d-383e-4e83-9aa2-9f92b3220e34",
+    "qType": "variable"
+  },
+  "qMetaDef": {},
+  "qName": "vFiltroInicial",
+  "qNumberPresentation": {
+    "qType": "U",
+    "qnDec": 10,
+    "qUseThou": 0
+  },
+  "qDefinition": "GetSelectedCount(Fecha_Hora)=0 AND GetSelectedCount(Mes)=0 AND GetSelectedCount(Semana)=0 AND GetSelectedCount(Fecha_Efectiva)=0 AND GetSelectedCount(fecha_version_indhor)=0 AND GetSelectedCount(fecha_version)=0 AND GetSelectedCount(fecha_hora_version)=0",
+  "tags": []
+}

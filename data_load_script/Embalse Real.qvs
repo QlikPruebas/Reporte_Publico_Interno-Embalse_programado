@@ -1,0 +1,15 @@
+///$tab Embalse Real
+CONCATENATE(Embalse_Programado)
+LOAD
+    AUTONUMBER(%KEY_BLOQUE_FUENTE_VERSION)	AS %KEY_BLOQUE_FUENTE_VERSION,
+    id_embalse,
+    nombre_embalse,
+    nombre_opereal,
+    cota,
+    cota_min_msnm,
+    cota_max_msnm,
+    id_central,
+    energia_embalsada_gwh,
+    fuente
+FROM [lib://STG/PLATAFORMA PROGRAMACION/STG_PRG_EMBALSE_REAL.qvd]
+(qvd);

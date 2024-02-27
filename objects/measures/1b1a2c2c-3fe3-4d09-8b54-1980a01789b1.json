@@ -1,0 +1,25 @@
+{
+  "qInfo": {
+    "qId": "1b1a2c2c-3fe3-4d09-8b54-1980a01789b1",
+    "qType": "measure"
+  },
+  "qMeasure": {
+    "qLabel": "USD/MWh - PMP",
+    "qDef": "AVG({<fuente={'PMP'},fecha_hora_version>}  Precio)",
+    "qGrouping": "N",
+    "qExpressions": [],
+    "qActiveExpression": 0,
+    "qLabelExpression": "='USD/MWh PMP'",
+    "qNumFormat": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "coloring": {}
+  },
+  "qMetaDef": {
+    "title": "USD/MWh - PMP",
+    "description": "",
+    "tags": []
+  }
+}

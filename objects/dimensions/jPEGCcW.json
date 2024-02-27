@@ -1,0 +1,26 @@
+{
+  "qInfo": {
+    "qId": "jPEGCcW",
+    "qType": "dimension"
+  },
+  "qDim": {
+    "qGrouping": "N",
+    "qFieldDefs": [
+      "nombre_embalse"
+    ],
+    "qFieldLabels": [
+      "Nombre Embalse"
+    ],
+    "qLabelExpression": "='Nombre Embalse'",
+    "title": "Nombre Embalse",
+    "coloring": {
+      "changeHash": "0.47881161145298035",
+      "colorMapRef": "jPEGCcW"
+    }
+  },
+  "qMetaDef": {
+    "title": "Nombre Embalse",
+    "description": "",
+    "tags": []
+  }
+}

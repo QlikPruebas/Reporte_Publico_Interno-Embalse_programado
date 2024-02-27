@@ -1,0 +1,15 @@
+{
+  "qInfo": {
+    "qId": "f6ffb443-aaf4-442d-8e03-f1c8affe272a",
+    "qType": "variable"
+  },
+  "qMetaDef": {},
+  "qName": "vEscalaEmbalse",
+  "qNumberPresentation": {
+    "qType": "U",
+    "qnDec": 10,
+    "qUseThou": 0
+  },
+  "qDefinition": "[m.s.n.m]",
+  "tags": []
+}

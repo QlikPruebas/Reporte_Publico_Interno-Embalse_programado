@@ -1,0 +1,26 @@
+{
+  "qInfo": {
+    "qId": "LEKVbP",
+    "qType": "measure"
+  },
+  "qMeasure": {
+    "qLabel": "Cota REAL [m.s.n.m.]",
+    "qDef": "Avg({<fuente = {'REAL'},fecha_version,fecha_version_indhor,bloque,etapa,hidro,hidroFiltro,fecha_hora_version>} cota)",
+    "qGrouping": "N",
+    "qExpressions": [],
+    "qActiveExpression": 0,
+    "qLabelExpression": "='Cota REAL [m.s.n.m.]'",
+    "qNumFormat": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "numFormatFromTemplate": true,
+    "coloring": {}
+  },
+  "qMetaDef": {
+    "title": "Cota REAL [m.s.n.m.]",
+    "description": "",
+    "tags": []
+  }
+}

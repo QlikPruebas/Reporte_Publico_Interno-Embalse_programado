@@ -1,0 +1,26 @@
+{
+  "qInfo": {
+    "qId": "838c620a-0a8e-4e21-8967-bf0da5e61b98",
+    "qType": "measure"
+  },
+  "qMeasure": {
+    "qLabel": "Cota PCP [m.s.n.m.] Max Fecha - REAL - PCP",
+    "qDef": "IF($(vFiltroInicial),\r\n    \tAvg({<fuente = {'PCP'},Fecha = {\"$(=MAX({<fuente = {'PCP'},fecha_hora_version>} Fecha))\"},etapa,bloque,hidro,hidroFiltro,fecha_hora_version>} cota),\n        Avg({<fuente = {'PCP'},etapa,bloque,hidro,hidroFiltro,fecha_hora_version>} cota)\n)\n\n",
+    "qGrouping": "N",
+    "qExpressions": [],
+    "qActiveExpression": 0,
+    "qLabelExpression": "='Cota PCP [m.s.n.m.]'",
+    "qNumFormat": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "numFormatFromTemplate": true,
+    "coloring": {}
+  },
+  "qMetaDef": {
+    "title": "Cota PCP [m.s.n.m.] Max Fecha - REAL - PCP",
+    "description": "",
+    "tags": []
+  }
+}

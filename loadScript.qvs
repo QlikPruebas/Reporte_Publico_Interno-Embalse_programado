@@ -1,0 +1,134 @@
+///$tab Main
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep='.';
+SET MoneyDecimalSep=',';
+SET MoneyFormat='$#.##0;$-#.##0';
+SET TimeFormat='hh:mm:ss';
+SET DateFormat='YYYY-MM-DD';
+SET TimestampFormat='YYYY-MM-DD hh:mm:ss[.fff]';
+SET FirstWeekDay=0;
+SET BrokenWeeks=1;
+SET ReferenceDay=0;
+SET FirstMonthOfYear=1;
+SET CollationLocale='es-CL';
+SET CreateSearchIndexOnReload=1;
+SET MonthNames='Ene;Feb;Mar;Abr;May;Jun;Jul;Ago;Sep;Oct;Nov;Dic';
+SET LongMonthNames='Enero;Febrero;Marzo;Abril;Mayo;Junio;Julio;Agosto;Septiembre;Octubre;Noviembre;Diciembre';
+SET DayNames='lun.;mar.;mié.;jue.;vie.;sáb.;dom.';
+SET LongDayNames='lunes;martes;miércoles;jueves;viernes;sábado;domingo';
+SET NumericalAbbreviation='3:k;6:M;9:G;12:T;15:P;18:E;21:Z;24:Y;-3:m;-6:μ;-9:n;-12:p;-15:f;-18:a;-21:z;-24:y';
+///$tab Embalse Programado
+Embalse_Programado:
+LOAD
+    AUTONUMBER(%KEY_BLOQUE_FUENTE_VERSION)	AS %KEY_BLOQUE_FUENTE_VERSION,
+    nombre_embalse,
+    nombre_opereal,
+    cota,
+    Precio,
+    cota_min_msnm,
+    cota_max_msnm,
+    intervalo,
+    fuente,
+    cuenca,
+    fecha_version,
+    fecha_hora_version,
+    numero_version,
+    embvini,
+    embfac,
+    embqgen,
+    embqver,
+    embqdef,
+    embpsom2,
+    embaflu,
+    embqfil,
+    embqreb,
+    bloque,
+    hidro,
+    hidro 									AS hidroFiltro,
+    etapa
+FROM [lib://STG/PLATAFORMA PROGRAMACION/STG_PRG_EMBALSE_PROGRAMADO.qvd]
+(qvd);
+
+
+///$tab Embalse Real
+CONCATENATE(Embalse_Programado)
+LOAD
+    AUTONUMBER(%KEY_BLOQUE_FUENTE_VERSION)	AS %KEY_BLOQUE_FUENTE_VERSION,
+    id_embalse,
+    nombre_embalse,
+    nombre_opereal,
+    cota,
+    cota_min_msnm,
+    cota_max_msnm,
+    id_central,
+    energia_embalsada_gwh,
+    fuente
+FROM [lib://STG/PLATAFORMA PROGRAMACION/STG_PRG_EMBALSE_REAL.qvd]
+(qvd);
+///$tab Fechas
+//PMP Y PLP viene por bloque y requiere la indhor para obtener fecha
+CALENDARIO:
+LOAD
+    AUTONUMBER(%KEY_BLOQUE_FUENTE_VERSION)	AS %KEY_BLOQUE_FUENTE_VERSION,
+    AñoMesNum,	
+    MesAño,
+	Mes,
+    Año,
+    Semana,
+    MesAño &'-S'& Semana	AS MesAñoSemana,
+    Año&NUM(Mes)&Semana 	AS MesAñoSemanaNum,
+    Dia,
+    Hora,
+    Fecha,
+    DATE(Fecha_Hora, 'YYYY-MM-DD hh:mm:ss') AS Fecha_Hora,
+    Fecha_Efectiva,
+    fuente_indhor,
+    fecha_version_indhor,
+    numero_version_indhor
+FROM [lib://STG/PLATAFORMA PROGRAMACION/STG_PRG_DIM_INDHOR.qvd] (qvd); 
+
+// PCP y PID no requiere de la indhor ya viene con fecha pero se requiere unificar campos de fecha.
+CONCATENATE(CALENDARIO)
+LOAD
+    AUTONUMBER(%KEY_BLOQUE_FUENTE_VERSION)	AS %KEY_BLOQUE_FUENTE_VERSION,
+    AñoMesNum,	
+    MesAño,
+	Mes,
+    Año,
+    Semana,
+    MesAño &'-S'& Semana	AS MesAñoSemana,
+    Año&NUM(Mes)&Semana 	AS MesAñoSemanaNum,
+    Dia,
+    Hora,
+    Fecha,
+    DATE(Fecha_Hora, 'DD-MM-YYYY hh:mm:ss') AS Fecha_Hora,
+    Fecha_Efectiva,
+    fuente					AS fuente_indhor
+FROM [lib://STG/PLATAFORMA PROGRAMACION/STG_PRG_EMBALSE_PROGRAMADO.qvd] (qvd)
+WHERE MATCH(fuente,'PCP','PID')>0;
+
+// Embalse Real
+CONCATENATE(CALENDARIO)
+LOAD
+    AUTONUMBER(%KEY_BLOQUE_FUENTE_VERSION)	AS %KEY_BLOQUE_FUENTE_VERSION,
+    fecha,
+    DATE(Fecha_Hora, 'YYYY-MM-DD hh:mm:ss') AS Fecha_Hora,
+    Fecha,
+    Fecha									AS Fecha_Efectiva,
+    AñoMesNum,
+    MesAño,
+    Mes,
+    Año,
+    Semana,
+    MesAño &'-S'& Semana	AS MesAñoSemana,
+    Año&NUM(Mes)&Semana 	AS MesAñoSemanaNum,
+    Dia,
+    Hora,
+    fuente					AS fuente_indhor
+FROM [lib://STG/PLATAFORMA PROGRAMACION/STG_PRG_EMBALSE_REAL.qvd] (qvd)
+WHERE MATCH(fuente,'REAL')>0;
+
+
+
+

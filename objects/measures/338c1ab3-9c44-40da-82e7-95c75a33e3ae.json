@@ -1,0 +1,26 @@
+{
+  "qInfo": {
+    "qId": "338c1ab3-9c44-40da-82e7-95c75a33e3ae",
+    "qType": "measure"
+  },
+  "qMeasure": {
+    "qLabel": "Cota mínima [m.s.n.m.] Max Fecha - REAL - PID",
+    "qDef": "IF($(vFiltroInicial),\r\n    \tAVG({<Fecha = {\"$(=MAX({<fuente = {'PID'},hidro,bloque,etapa,fecha_hora_version>} Fecha))\"}>} cota_min_msnm),\n        AVG({<Fecha = {\"<$(=MAX({<fuente = {'PID','REAL'},hidro,bloque,etapa,fecha_hora_version>} Fecha))\"}>} cota_min_msnm)\n)\n",
+    "qGrouping": "N",
+    "qExpressions": [],
+    "qActiveExpression": 0,
+    "qLabelExpression": "='Cota mínima [m.s.n.m.]'",
+    "qNumFormat": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "numFormatFromTemplate": true,
+    "coloring": {}
+  },
+  "qMetaDef": {
+    "title": "Cota mínima [m.s.n.m.] Max Fecha - REAL - PID",
+    "description": "",
+    "tags": []
+  }
+}

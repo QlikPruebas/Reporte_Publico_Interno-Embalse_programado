@@ -1,0 +1,26 @@
+{
+  "qInfo": {
+    "qId": "aef80eaf-4e13-4a91-816e-4cce373430fc",
+    "qType": "measure"
+  },
+  "qMeasure": {
+    "qLabel": "Cota PMP [m.s.n.m.] Mes Actual",
+    "qDef": "Avg({<fuente = {'PMP'},fecha_hora_version,AñoMesNum= {\"$(=YEAR(TODAY())&NUM(MONTH(TODAY())\"}>} cota)",
+    "qGrouping": "N",
+    "qExpressions": [],
+    "qActiveExpression": 0,
+    "qLabelExpression": "='Cota PMP [m.s.n.m.]'",
+    "qNumFormat": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "numFormatFromTemplate": true,
+    "coloring": {}
+  },
+  "qMetaDef": {
+    "title": "Cota PMP [m.s.n.m.] Mes Actual",
+    "description": "",
+    "tags": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "qInfo": {
+    "qId": "dad8d78e-06c6-4d9b-bf86-ebadf133cb29",
+    "qType": "measure"
+  },
+  "qMeasure": {
+    "qLabel": "Cota mínima [m.s.n.m.] Max Fecha - REAL - PCP",
+    "qDef": "IF($(vFiltroInicial),\r\n    \tAVG({<Fecha = {\"$(=MAX({<fuente = {'PCP'},hidro,bloque,etapa,fecha_hora_version>} Fecha))\"}>} cota_min_msnm),\n        AVG({<Fecha = {\"<$(=MAX({<fuente = {'PCP','REAL'},hidro,bloque,etapa,fecha_hora_version>} Fecha))\"}>} cota_min_msnm)\n)\n",
+    "qGrouping": "N",
+    "qExpressions": [],
+    "qActiveExpression": 0,
+    "qLabelExpression": "='Cota mínima [m.s.n.m.]'",
+    "qNumFormat": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "numFormatFromTemplate": true,
+    "coloring": {}
+  },
+  "qMetaDef": {
+    "title": "Cota mínima [m.s.n.m.] Max Fecha - REAL - PCP",
+    "description": "",
+    "tags": []
+  }
+}

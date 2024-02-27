@@ -1,0 +1,29 @@
+{
+  "qInfo": {
+    "qId": "eac38645-5dd1-4d2f-accc-3552a01df7b6",
+    "qType": "measure"
+  },
+  "qMeasure": {
+    "qLabel": "Cota máxima [m.s.n.m.] Max Fecha REAL - PCP",
+    "qDef": "IF($(vFiltroInicial),\r\n    \tAVG({<Fecha = {\"$(=MAX({<fuente = {'PCP'},hidro,bloque,etapa,fecha_hora_version>} Fecha))\"}>} cota_max_msnm),\n        AVG({<Fecha = {\"<$(=MAX({<fuente = {'REAL','PCP'},hidro,bloque,etapa,fecha_hora_version>} Fecha))\"}>}cota_max_msnm)\n)\n",
+    "qGrouping": "N",
+    "qExpressions": [],
+    "qActiveExpression": 0,
+    "qLabelExpression": "='Cota máxima [m.s.n.m.]'",
+    "qNumFormat": {
+      "qType": "U",
+      "qnDec": 2,
+      "qUseThou": 0,
+      "qDec": ".",
+      "qThou": ","
+    },
+    "isCustomFormatted": false,
+    "numFormatFromTemplate": true,
+    "coloring": {}
+  },
+  "qMetaDef": {
+    "title": "Cota máxima [m.s.n.m.] Max Fecha REAL - PCP",
+    "description": "",
+    "tags": []
+  }
+}

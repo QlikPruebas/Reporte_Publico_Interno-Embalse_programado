@@ -1,0 +1,29 @@
+{
+  "qInfo": {
+    "qId": "jGLvpyZ",
+    "qType": "measure"
+  },
+  "qMeasure": {
+    "qLabel": "Cota máxima [m.s.n.m.]",
+    "qDef": "AVG(cota_max_msnm)",
+    "qGrouping": "N",
+    "qExpressions": [],
+    "qActiveExpression": 0,
+    "qLabelExpression": "='Cota máxima [m.s.n.m.]'",
+    "qNumFormat": {
+      "qType": "U",
+      "qnDec": 2,
+      "qUseThou": 0,
+      "qDec": ".",
+      "qThou": ","
+    },
+    "isCustomFormatted": false,
+    "numFormatFromTemplate": true,
+    "coloring": {}
+  },
+  "qMetaDef": {
+    "title": "Cota máxima [m.s.n.m.]",
+    "description": "",
+    "tags": []
+  }
+}

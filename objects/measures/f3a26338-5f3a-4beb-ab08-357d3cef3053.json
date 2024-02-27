@@ -1,0 +1,26 @@
+{
+  "qInfo": {
+    "qId": "f3a26338-5f3a-4beb-ab08-357d3cef3053",
+    "qType": "measure"
+  },
+  "qMeasure": {
+    "qLabel": "Cota REAL [m.s.n.m.] Max Fecha REAL - PID",
+    "qDef": "IF($(vFiltroInicial),\r\n    \tAvg({<fuente = {'REAL'},Fecha = {\"$(=MAX({<fuente = {'PID'}>} Fecha))\"},fecha_version,fecha_version_indhor,bloque,etapa,hidro,hidroFiltro,fecha_hora_version>} cota),\n        Avg({<fuente = {'REAL'},fecha_version,fecha_version_indhor,bloque,etapa,hidro,hidroFiltro,fecha_hora_version>} cota),\n)",
+    "qGrouping": "N",
+    "qExpressions": [],
+    "qActiveExpression": 0,
+    "qLabelExpression": "='Cota REAL [m.s.n.m.]'",
+    "qNumFormat": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "numFormatFromTemplate": true,
+    "coloring": {}
+  },
+  "qMetaDef": {
+    "title": "Cota REAL [m.s.n.m.] Max Fecha REAL - PID",
+    "description": "",
+    "tags": []
+  }
+}

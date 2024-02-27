@@ -1,0 +1,26 @@
+{
+  "qInfo": {
+    "qId": "acac3bdb-e056-4a53-92be-ecd620d0ce0a",
+    "qType": "measure"
+  },
+  "qMeasure": {
+    "qLabel": "Cota PID [m.s.n.m.] Max Fecha",
+    "qDef": "IF($(vFiltroInicial),\r\n    \tAvg({<fuente = {'PID'},Fecha = {\"$(=MAX({<fuente = {'PID'}>} Fecha))\"},etapa,bloque,hidro,hidroFiltro>} cota),\n        Avg({<fuente = {'PID'},etapa,bloque,hidro,hidroFiltro>} cota),\n)",
+    "qGrouping": "N",
+    "qExpressions": [],
+    "qActiveExpression": 0,
+    "qLabelExpression": "='Cota PID [m.s.n.m.]'",
+    "qNumFormat": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "numFormatFromTemplate": true,
+    "coloring": {}
+  },
+  "qMetaDef": {
+    "title": "Cota PID [m.s.n.m.] Max Fecha",
+    "description": "",
+    "tags": []
+  }
+}

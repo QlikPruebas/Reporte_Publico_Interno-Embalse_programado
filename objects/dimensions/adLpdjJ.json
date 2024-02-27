@@ -1,0 +1,25 @@
+{
+  "qInfo": {
+    "qId": "adLpdjJ",
+    "qType": "dimension"
+  },
+  "qDim": {
+    "qGrouping": "N",
+    "qFieldDefs": [
+      "fecha_version"
+    ],
+    "qFieldLabels": [
+      "Fecha Versión"
+    ],
+    "qLabelExpression": "='Fecha Versión'",
+    "title": "Fecha Versión",
+    "coloring": {
+      "changeHash": "0.3917178292644736"
+    }
+  },
+  "qMetaDef": {
+    "title": "Fecha Versión",
+    "description": "",
+    "tags": []
+  }
+}

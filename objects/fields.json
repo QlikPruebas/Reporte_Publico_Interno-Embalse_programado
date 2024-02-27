@@ -1,0 +1,452 @@
+[
+  {
+    "qName": "%KEY_BLOQUE_FUENTE_VERSION",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado",
+      "CALENDARIO"
+    ]
+  },
+  {
+    "qName": "Año",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "CALENDARIO"
+    ]
+  },
+  {
+    "qName": "AñoMesNum",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "CALENDARIO"
+    ]
+  },
+  {
+    "qName": "Dia",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "CALENDARIO"
+    ]
+  },
+  {
+    "qName": "Fecha",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "CALENDARIO"
+    ]
+  },
+  {
+    "qName": "Fecha_Efectiva",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "CALENDARIO"
+    ]
+  },
+  {
+    "qName": "Fecha_Hora",
+    "qTags": [
+      "$numeric",
+      "$timestamp"
+    ],
+    "qSrcTables": [
+      "CALENDARIO"
+    ]
+  },
+  {
+    "qName": "Hora",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "CALENDARIO"
+    ]
+  },
+  {
+    "qName": "Mes",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "CALENDARIO"
+    ]
+  },
+  {
+    "qName": "MesAño",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "CALENDARIO"
+    ]
+  },
+  {
+    "qName": "MesAñoSemana",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "CALENDARIO"
+    ]
+  },
+  {
+    "qName": "MesAñoSemanaNum",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "CALENDARIO"
+    ]
+  },
+  {
+    "qName": "Precio",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "Semana",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "CALENDARIO"
+    ]
+  },
+  {
+    "qName": "bloque",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "cota",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "cota_max_msnm",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "cota_min_msnm",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "cuenca",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "embaflu",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "embfac",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "embpsom2",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "embqdef",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "embqfil",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "embqgen",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "embqreb",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "embqver",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "embvini",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "energia_embalsada_gwh",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "etapa",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "fecha",
+    "qTags": [
+      "$numeric",
+      "$timestamp"
+    ],
+    "qSrcTables": [
+      "CALENDARIO"
+    ]
+  },
+  {
+    "qName": "fecha_hora_version",
+    "qTags": [
+      "$numeric",
+      "$timestamp"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "fecha_version",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "fecha_version_indhor",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "CALENDARIO"
+    ]
+  },
+  {
+    "qName": "fuente",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "fuente_indhor",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "CALENDARIO"
+    ]
+  },
+  {
+    "qName": "hidro",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "hidroFiltro",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "id_central",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "id_embalse",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "intervalo",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "nombre_embalse",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "nombre_opereal",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "numero_version",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Embalse_Programado"
+    ]
+  },
+  {
+    "qName": "numero_version_indhor",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "CALENDARIO"
+    ]
+  }
+]

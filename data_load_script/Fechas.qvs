@@ -1,0 +1,62 @@
+///$tab Fechas
+//PMP Y PLP viene por bloque y requiere la indhor para obtener fecha
+CALENDARIO:
+LOAD
+    AUTONUMBER(%KEY_BLOQUE_FUENTE_VERSION)	AS %KEY_BLOQUE_FUENTE_VERSION,
+    AñoMesNum,	
+    MesAño,
+	Mes,
+    Año,
+    Semana,
+    MesAño &'-S'& Semana	AS MesAñoSemana,
+    Año&NUM(Mes)&Semana 	AS MesAñoSemanaNum,
+    Dia,
+    Hora,
+    Fecha,
+    DATE(Fecha_Hora, 'YYYY-MM-DD hh:mm:ss') AS Fecha_Hora,
+    Fecha_Efectiva,
+    fuente_indhor,
+    fecha_version_indhor,
+    numero_version_indhor
+FROM [lib://STG/PLATAFORMA PROGRAMACION/STG_PRG_DIM_INDHOR.qvd] (qvd); 
+
+// PCP y PID no requiere de la indhor ya viene con fecha pero se requiere unificar campos de fecha.
+CONCATENATE(CALENDARIO)
+LOAD
+    AUTONUMBER(%KEY_BLOQUE_FUENTE_VERSION)	AS %KEY_BLOQUE_FUENTE_VERSION,
+    AñoMesNum,	
+    MesAño,
+	Mes,
+    Año,
+    Semana,
+    MesAño &'-S'& Semana	AS MesAñoSemana,
+    Año&NUM(Mes)&Semana 	AS MesAñoSemanaNum,
+    Dia,
+    Hora,
+    Fecha,
+    DATE(Fecha_Hora, 'DD-MM-YYYY hh:mm:ss') AS Fecha_Hora,
+    Fecha_Efectiva,
+    fuente					AS fuente_indhor
+FROM [lib://STG/PLATAFORMA PROGRAMACION/STG_PRG_EMBALSE_PROGRAMADO.qvd] (qvd)
+WHERE MATCH(fuente,'PCP','PID')>0;
+
+// Embalse Real
+CONCATENATE(CALENDARIO)
+LOAD
+    AUTONUMBER(%KEY_BLOQUE_FUENTE_VERSION)	AS %KEY_BLOQUE_FUENTE_VERSION,
+    fecha,
+    DATE(Fecha_Hora, 'YYYY-MM-DD hh:mm:ss') AS Fecha_Hora,
+    Fecha,
+    Fecha									AS Fecha_Efectiva,
+    AñoMesNum,
+    MesAño,
+    Mes,
+    Año,
+    Semana,
+    MesAño &'-S'& Semana	AS MesAñoSemana,
+    Año&NUM(Mes)&Semana 	AS MesAñoSemanaNum,
+    Dia,
+    Hora,
+    fuente					AS fuente_indhor
+FROM [lib://STG/PLATAFORMA PROGRAMACION/STG_PRG_EMBALSE_REAL.qvd] (qvd)
+WHERE MATCH(fuente,'REAL')>0;

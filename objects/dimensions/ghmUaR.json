@@ -1,0 +1,25 @@
+{
+  "qInfo": {
+    "qId": "ghmUaR",
+    "qType": "dimension"
+  },
+  "qDim": {
+    "qGrouping": "N",
+    "qFieldDefs": [
+      "Fecha_Hora"
+    ],
+    "qFieldLabels": [
+      "Fecha Hora"
+    ],
+    "qLabelExpression": "='Fecha Hora'",
+    "title": "Fecha Hora",
+    "coloring": {
+      "changeHash": "0.6708627126179743"
+    }
+  },
+  "qMetaDef": {
+    "title": "Fecha Hora",
+    "description": "",
+    "tags": []
+  }
+}
